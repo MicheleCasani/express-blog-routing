@@ -30,4 +30,4 @@ router.delete('/:id', (req, res) => {
 });
 
 // esporto il router
-module.export = router;
+module.exports = router;
