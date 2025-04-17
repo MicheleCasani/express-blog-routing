@@ -4,9 +4,6 @@ const express = require('express')
 // importo router
 const router = express.Router();
 
-// importo la variabile posts
-const posts = require('posts')
-
 // index
 router.get('/', (req, res) => {
     res.send('lista dei post')
