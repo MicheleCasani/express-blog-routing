@@ -7,6 +7,12 @@ const app = express();
 // definisco il numero di porta, ovvero 3000
 const port = 3000;
 
+// importo router
+const postsRouter = require('./routers/posts.js')
+
+// instrada le richieste che iniziano con /posts al router postsRouter
+app.use('/posts', postsRouter)
+
 // importo la cartella public, che contiene file statici
 app.use(express.static('public'));
 
@@ -66,4 +72,5 @@ const posts = [
     },
   ];
   
+//   esporto la variabile posts
   module.exports = posts;
