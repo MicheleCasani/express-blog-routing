@@ -28,3 +28,6 @@ router.put('/:id',(req, res)=>{
 router.delete('/:id',(req, res)=>{
     res.send('elimino il post con id:' + req.params.id)
 });
+
+// esporto il router
+module.export = router;
