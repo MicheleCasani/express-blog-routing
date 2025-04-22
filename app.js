@@ -14,11 +14,11 @@ const postsRouter = require('./routers/posts.js')
 app.use('/posts', postsRouter)
 
 // importo la cartella public, che contiene file statici
-app.use(express.static('public'));
+app.use('/imgs', express.static('public/imgs'));
 
 // definisco la rotta base 
 app.get('/', (req, res)=>{
-    res.send('server del mio blog')
+    res.send('Homepage')
 })
 
 // dico al server di rimanere in ascolto sulla porta 3000
