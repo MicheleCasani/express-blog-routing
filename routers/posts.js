@@ -32,7 +32,7 @@ router.put('/:id', (req, res) => {
     res.json('mdifico il post con id:' + req.params.id)
 });
 
-// update (patch)
+// modify (patch)
 router.patch('/:id', (req, res) => {
     res.json('mdifica parziale del post con id:' + req.params.id)
 });
